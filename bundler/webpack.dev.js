@@ -17,16 +17,14 @@ module.exports = merge(commonConfiguration, {
     devServer: {
         historyApiFallback: {
             rewrites: [{ from: /[\\/](!api|!static)[\\/]/, to: '/index.html' }]
-        },
+        }
         // disableHostCheck: true,
         // contentBase: false,
-        host: 'localhost',
-        port: 8080,
-        watchFiles: ['src/**', 'static/**'],
-        static: {
-            watch: true,
-            directory: path.join(__dirname, '../static')
-        }
+        // watchFiles: ['src/**', 'static/**'],
+        // static: {
+        //     watch: true,
+        //     directory: path.join(__dirname, '../static')
+        // }
     },
     devtool: 'inline-source-map'
     // devServer: {
